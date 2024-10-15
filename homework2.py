@@ -1,8 +1,14 @@
-number = input("Введите целое простое десятичное число: ")
+number = input("Введите целое десятичное число: ")
 
-if number.isdigit():
+if number.lstrip('-').isdigit():
     number = int(number)
-    print(f"Двоичное представление: {bin(number)[2:]}")
-    print(f"Восьмеричное пред ставление: {oct(number)[2:]}")
+    if number >= 0:
+        bin = bin(number)[2:]
+        oct = oct(number)[2:]
+    else:
+        bin = '-' + bin(abs(number))[2:]
+        oct = '-' + oct(abs(number))[2:]
+    print(f"Двоичное представление: {bin}")
+    print(f"Восьмеричное представление: {oct}")
 else:
     print("Ошибка: введите корректное целое число.")
