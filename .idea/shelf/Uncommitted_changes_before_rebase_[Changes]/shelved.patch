@@ -1,0 +1,55 @@
+Index: homework3.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>def to_quaternary(n):\r\n    if n < 4:\r\n        return str(n)\r\n    else:\r\n        return to_quaternary(n // 4) + str(n % 4)\r\n\r\nnumber = input(\"Введите целое десятичное число: \")\r\n\r\nif number.isdigit():\r\n    number = int(number)\r\n    quaternary_number = to_quaternary(number)\r\n    print(f\"Четверичное представление: {quaternary_number}\")\r\nelse:\r\n    print(\"Ошибка: введите корректное целое число.\")\r\n
+===================================================================
+diff --git a/homework3.py b/homework3.py
+--- a/homework3.py	
++++ b/homework3.py	
+@@ -1,14 +1,13 @@
+-def to_quaternary(n):
++def convert(n):
+     if n < 4:
+         return str(n)
+     else:
+-        return to_quaternary(n // 4) + str(n % 4)
++        return convert(n // 4) + str(n % 4)
+ 
+ number = input("Введите целое десятичное число: ")
+ 
+ if number.isdigit():
+     number = int(number)
+-    quaternary_number = to_quaternary(number)
+-    print(f"Четверичное представление: {quaternary_number}")
++    print(f"Четверичное представление: {convert(number)}")
+ else:
+     print("Ошибка: введите корректное целое число.")
+Index: homework4.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>def to_quaternary(n):\r\n    if n < 4:\r\n        return str(n)\r\n    else:\r\n        return to_quaternary(n // 4) + str(n % 4)\r\n\r\n\r\na = input(\"Введите целое число a: \")\r\nb = input(\"Введите целое число b (b не должно быть равно 0): \")\r\nc = input(\"Введите целое число c: \")\r\n\r\nif a.isdigit() and b.isdigit() and c.isdigit():\r\n    a = int(a)\r\n    b = int(b)\r\n    c = int(c)\r\n\r\n    if b != 0:\r\n        result = a / b - 2 * c\r\n        quaternary_result = to_quaternary(int(result))\r\n        print(f\"Результат в четверичной системе: {quaternary_result}\")\r\n    else:\r\n        print(\"Ошибка: b не должно быть равно 0.\")\r\nelse:\r\n    print(\"Ошибка: введите корректные целые числа.\")\r\n
+===================================================================
+diff --git a/homework4.py b/homework4.py
+--- a/homework4.py	
++++ b/homework4.py	
+@@ -1,8 +1,8 @@
+-def to_quaternary(n):
++def convert(n):
+     if n < 4:
+         return str(n)
+     else:
+-        return to_quaternary(n // 4) + str(n % 4)
++        return convert(n // 4) + str(n % 4)
+ 
+ 
+ a = input("Введите целое число a: ")
+@@ -16,8 +16,7 @@
+ 
+     if b != 0:
+         result = a / b - 2 * c
+-        quaternary_result = to_quaternary(int(result))
+-        print(f"Результат в четверичной системе: {quaternary_result}")
++        print(f"Результат в четверичной системе: {convert(int(result))}")
+     else:
+         print("Ошибка: b не должно быть равно 0.")
+ else:
