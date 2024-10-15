@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b96b86d9-cddd-4ae0-99f2-214a4467a720" name="Changes" comment="Second Commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b96b86d9-cddd-4ae0-99f2-214a4467a720" name="Changes" comment="Слетел gitignore и LICENSE">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework2.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework3.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework4.py" beforeDir="false" afterPath="$PROJECT_DIR$/homework4.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +46,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/ovovk/PycharmProjects/pr7&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.homework4">
+  <component name="RunManager" selected="Python.homework2 (1)">
     <configuration name="homework2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pr7" />
       <option name="ENV_FILES" value="" />
@@ -134,9 +137,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.homework4" />
-        <item itemvalue="Python.homework3" />
         <item itemvalue="Python.homework2 (1)" />
+        <item itemvalue="Python.homework3" />
+        <item itemvalue="Python.homework4" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +167,23 @@
       <option name="project" value="LOCAL" />
       <updated>1729004375782</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Слетел gitignore и LICENSE">
+      <option name="closed" value="true" />
+      <created>1729006384781</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729006384781</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Слетел gitignore и LICENSE">
+      <option name="closed" value="true" />
+      <created>1729011110038</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1729011110038</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +211,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
+    <MESSAGE value="Слетел gitignore и LICENSE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Слетел gitignore и LICENSE" />
   </component>
 </project>
